@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 375px;
+  padding: 0 20px 100px;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+h1 {
+  text-align: center;
+  padding: 30px 0 15px;
+}
+
+.women-bg {
+  position: relative;
+  width: 241px;
+  top: 75px;
+  margin: 0 auto;
+}
+.bg-shadow-mobile {
+  margin-left: 25px;
+}
+/* ------------QUESTIONS-------------------- */
+
+.question-box {
+  padding: 0px 20px 50px;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 60px 40px -20px hsla(238, 29%, 16%, 30%);
+  border: 1px solid black;
+}
+
+.quesAndAns {
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.questions {
+  background-color: white;
+  padding: 15px 0;
+  font-size: 14px;
+  color: hsl(240, 6%, 50%);
+  border: none;
+  text-align: left;
+}
+
+.arrow {
+  margin: auto auto;
+}
+
+.arrow-focus {
+  transform: scaleY(-1);
+}
+
+.questions:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.answers {
+  font-size: 13px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  display: none;
+  color: hsl(240, 6%, 50%);
+}
+
+.question-in-focus {
+  color: black;
+  font-weight: 700;
+}
+
+.desktop-graphics {
+  display: none;
+}
+
+/* ------------FOOTER SECTION---------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  position: static;
+  margin-top: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+/* -----------------MEDIA QUERIES----------------- */
+
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .question-box {
+    max-width: 900px;
+    padding: 40px 0 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+  }
+
+  .quesAndAns {
+    width: 350px;
+    padding-right: 10px;
+  }
+
+  .questions,
+  .answers {
+    font-size: 12px;
+  }
+
+  .women-bg,
+  .bg-shadow-mobile {
+    display: none;
+  }
+
+  h1 {
+    text-align: left;
+    margin: 30px 0 10px;
+  }
+
+  .desktop-wom-online {
+    display: block;
+    position: relative;
+    left: -18%;
+  }
+
+  .box {
+    display: block;
+    position: absolute;
+    left: 12%;
+    top: 38%;
+    z-index: 1;
+  }
+}

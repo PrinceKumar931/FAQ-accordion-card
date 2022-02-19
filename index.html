@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="javaScript/index.js"></script>
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+
+  <body>
+    <main>
+      <img
+        class="women-bg"
+        src="images/illustration-woman-online-mobile.svg"
+        alt="women-online"
+      />
+      <img
+        class="desktop-graphics box"
+        src="images/illustration-box-desktop.svg"
+        alt="graphic-box"
+      />
+
+      <div class="question-box">
+   
+        <img
+          class="bg-shadow-mobile"
+          src="images/bg-pattern-mobile.svg"
+          alt="women-online-shadow"
+        />
+        <div class="left-box">
+          <img
+          class="desktop-graphics desktop-bg-pattern"
+          src="images/bg-pattern-desktop.svg"
+          alt="women-online-shadow"
+        />
+          <img
+          class="desktop-graphics desktop-wom-online"
+          src="images/illustration-woman-online-desktop.svg"
+          alt="illustration-box-desktop"
+        />
+
+        </div>
+        <aside class="right-box">
+          <h1>FAQ</h1>
+
+          <div class="quesAndAns">
+            <button
+              onclick="showAns('ansOne',1,'ques-1')"
+              class="questions"
+              id="ques-1"
+            >
+              How many team members can I invite?
+            </button>
+            <img
+              class="arrow"
+              id="1"
+              src="images/icon-arrow-down.svg"
+              alt="icon-arrow-down"
+            />
+            <div class="answers" id="ansOne">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+          </div>
+
+          <div class="quesAndAns">
+            <button
+              onclick="showAns('ansTwo',2,'ques-2')"
+              class="questions"
+              id="ques-2"
+            >
+              What is the maximum file upload size?
+            </button>
+            <img
+              class="arrow"
+              id="2"
+              src="images/icon-arrow-down.svg"
+              alt="icon-arrow-down"
+            />
+            <div class="answers" id="ansTwo">
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+          </div>
+
+          <div class="quesAndAns">
+            <button
+              onclick="showAns('ansThree',3,'ques-3')"
+              class="questions"
+              id="ques-3"
+            >
+              How do I reset my password?
+            </button>
+            <img
+              class="arrow"
+              id="3"
+              src="images/icon-arrow-down.svg"
+              alt="icon-arrow-down"
+            />
+            <div class="answers" id="ansThree">
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page.A reset link will be emailed to you.
+              </p>
+            </div>
+          </div>
+
+          <div class="quesAndAns">
+            <button
+              onclick="showAns('ansFour',4,'ques-4')"
+              class="questions"
+              id="ques-4"
+            >
+              Can I cancel my subscription?
+            </button>
+            <img
+              class="arrow"
+              id="4"
+              src="images/icon-arrow-down.svg"
+              alt="icon-arrow-down"
+            />
+
+            <div class="answers" id="ansFour">
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+          </div>
+
+          <div class="quesAndAns">
+            <button
+              onclick="showAns('ansFive',5,'ques-5')"
+              class="questions"
+              id="ques-5"
+            >
+              Do you provide additional support?
+            </button>
+            <img
+              class="arrow"
+              id="5"
+              src="images/icon-arrow-down.svg"
+              alt="icon-arrow-down"
+            />
+            <div class="answers" id="ansFive">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >&nbsp;Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/brago87"
+          >&nbsp;Prince Kumar</a
+        >.
+      </footer>
+    </main>
+
+
+  </body>
+</html>
